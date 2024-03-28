@@ -16,6 +16,7 @@
       }
 
       .container {
+        text-shadow: 2px 2px 12px Purple ;
         border: 1px solid rgba(0, 70, 75, 0.575);
         border-radius: 20px;
         backdrop-filter: blur(3px);
@@ -26,27 +27,20 @@
       }
 
       header {
-        /* background-color: rgba(
-          2,
-          4,
-          15,
-          0.8
-        ); */
-
         backdrop-filter: blur(10px);
         box-shadow: #00dbff 2px 2px 12px ;
-         /* Darker blue header with transparency */
         padding: 20px 0;
         text-align: center;
         position: fixed;
         width: 100%;
-        z-index: 1000; /* Ensure header stays on top */
+        z-index: 999;
       }
 
       header h1 {
+        text-shadow: 3px 3px 12px #00ddff8f;
         margin: 0;
         padding: 1rem;
-        color: #5ff0ff;
+        color: #0074a1;
       }
 
       nav ul {
@@ -103,6 +97,7 @@
       }
 
       .btn {
+        text-shadow: 3px 3px 12px #00ddffb0;
         padding: 10px 20px;
         /* background-color: #0099ff; */
         border: 1px solid transparent;
@@ -123,7 +118,7 @@
       /* Video background */
       video {
         background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.418)) ;
-        opacity: 80%;
+        opacity: 50%;
         position: fixed;
         top: 0;
         left: 0;
