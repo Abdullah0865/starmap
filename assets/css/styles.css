@@ -477,7 +477,8 @@ button{
 	background-color: transparent;
 }
 .navbar {
-    background: url('https://themewagon.com/wp-content/uploads/2021/07/Frame-53-1-1.png'); 
+	box-shadow: 2px 2px 12px white; /*! problem!!!! */
+    background: #000d3d; 
     color: #fff;
     padding: 10px 0;
 }
