@@ -8,6 +8,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
       /* Global Styles */
       body {
+        background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
         font-family: "Kode Mono", monospace;
         margin: 0;
         padding: 0;
@@ -15,18 +16,26 @@
       }
 
       .container {
+        border: 1px solid rgba(0, 70, 75, 0.575);
+        border-radius: 20px;
+        backdrop-filter: blur(3px);
         width: 80%;
+        box-shadow: -2px 2px 6px #5ff0ff;
         margin: auto;
         padding: 20px 0;
       }
 
       header {
-        background-color: rgba(
+        /* background-color: rgba(
           2,
           4,
           15,
           0.8
-        ); /* Darker blue header with transparency */
+        ); */
+
+        backdrop-filter: blur(10px);
+        box-shadow: #00dbff 2px 2px 12px ;
+         /* Darker blue header with transparency */
         padding: 20px 0;
         text-align: center;
         position: fixed;
@@ -96,24 +105,25 @@
       .btn {
         padding: 10px 20px;
         /* background-color: #0099ff; */
-        border: 1px solid #00dbff;
+        border: 1px solid transparent;
         color: #fff;
         text-decoration: none;
         border-radius: 10px;
-        transition: all 1s ease-in-out;
+        transition: all .75s ease-in-out;
       }
 
       .btn:hover {
-        background: linear-gradient(
-          45deg,
-          #00dbff,
+        background: 
           #007386
-        ); /* Darker blue on hover */
+        ; /* Darker blue on hover */
         transition: all 0.75s ease-in-out;
+        box-shadow: 1px 1px 6px #5ff0ff;
       }
 
       /* Video background */
       video {
+        background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.418)) ;
+        opacity: 80%;
         position: fixed;
         top: 0;
         left: 0;
