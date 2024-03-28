@@ -476,5 +476,87 @@ button{
 	padding: 10px 50px;
 	background-color: transparent;
 }
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+.navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+    background-color: #fff;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #444;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .navbar-links.active li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
