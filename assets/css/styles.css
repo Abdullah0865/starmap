@@ -481,6 +481,7 @@ button{
     background: #000d3d; 
     color: #fff;
     padding: 10px 0;
+	z-index: 999;
 }
 
 .container {
